@@ -17,4 +17,7 @@ if __name__ == "__main__":
                 if line.find(st) != -1:
                     data.append(line)
                     print(line)
+    f = open('output.txt', 'w')
+    for d in data:
+        f.write(d)
     f.close()
